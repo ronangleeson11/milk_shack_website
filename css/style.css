@@ -9,7 +9,6 @@
 }
 
 #logo {
-    margin-top: 20vh;
     font-size: 4rem;
 }
 
@@ -92,8 +91,7 @@ ol, ul {
 }
 
 body {
-    margin: 0;
+    margin: 20vh 0;
     min-height: 100vh;
-    overflow: hidden;
     background: url("../images/picmix.com_1694670.gif") no-repeat center / cover;
 }
