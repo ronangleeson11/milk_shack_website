@@ -1,0 +1,99 @@
+@import url("comico.css");
+@import url("aktura.css");
+
+:root {
+    --red: #FF5138;
+    --blue: #697EF5;
+    --white: #FCFCF5;
+    --black: #121224;
+}
+
+#logo {
+    margin-top: 20vh;
+    font-size: 4rem;
+}
+
+h1 {
+    font-family: Aktura-Regular;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 8px;
+    opacity: 0.9;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+a:link, a:visited, a:active {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 50%;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+#dragon {
+    position: absolute;
+    top: 20vh;
+    left: 10vh;
+    height: 40vh;
+    animation: dragon-fly 22s linear infinite;
+    will-change: transform;
+    pointer-events: none;
+}
+
+@keyframes dragon-fly {
+    0% {
+        transform: translate(0, 0) scaleX(1) rotate(0deg);
+    }
+
+    12.5% {
+        transform: translate(30vw, -5vh) scaleX(1) rotate(-4deg);
+    }
+
+    25% {
+        transform: translate(65vw, -8vh) scaleX(1) rotate(-6deg);
+    }
+
+    37.5% {
+        transform: translate(70vw, 20vh) scaleX(1) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(65vw, 45vh) scaleX(-1) rotate(6deg);
+    }
+
+    62.5% {
+        transform: translate(30vw, 35vh) scaleX(-1) rotate(3deg);
+    }
+
+    75% {
+        transform: translate(-10vw, 30vh) scaleX(-1) rotate(-4deg);
+    }
+
+    87.5% {
+        transform: translate(-5vw, 10vh) scaleX(-1) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(0, 0) scaleX(1) rotate(0deg);
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    background: url("../images/picmix.com_1694670.gif") no-repeat center / cover;
+}
