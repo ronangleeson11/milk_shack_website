@@ -8,8 +8,14 @@
     --black: #121224;
 }
 
-#logo {
+#hero-title {
     font-size: 4rem;
+}
+
+#home-button {
+    position: fixed;
+    top: 0;
+    left: 4vh;
 }
 
 h1 {
@@ -92,6 +98,5 @@ ol, ul {
 
 body {
     margin: 20vh 0;
-    min-height: 100vh;
-    background: url("../images/picmix.com_1694670.gif") no-repeat center / cover;
+    background: url("../images/picmix.com_1694670.gif") fixed no-repeat center / cover;
 }
