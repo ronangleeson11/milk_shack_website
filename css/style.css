@@ -21,6 +21,13 @@
     left: 4vh;
 }
 
+#fire {
+    position: absolute;
+    left: calc(50vw - 190px);
+    width: 380px;
+    top: calc(20vh - 130px);
+}
+
 #music-footer {
     text-align: center;
     position: fixed;
