@@ -1,7 +1,7 @@
+const hero_title = document.querySelector("#hero-title");
 const music_player = document.querySelector("#music-player");
 const tracklist = document.querySelector("#tracklist");
 const dragon = document.querySelector("#dragon");
-const hero_title = document.querySelector("#hero-title");
 
 // Play first song when album title clicked
 if (hero_title) {
