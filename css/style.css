@@ -28,8 +28,7 @@
     width: 100%;
     bottom: 0;
     padding-top: 4vh;
-    background: linear-gradient(transparent 20%, var(--white) 80%)
-    /* background: linear-gradient(transparent, var(--white)) */
+    background: linear-gradient(transparent, var(--white))
 }
 
 #music-player {
