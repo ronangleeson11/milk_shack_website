@@ -27,15 +27,32 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    padding-top: 10vh;
-    background: linear-gradient(transparent, var(--white))
+    padding-top: 4vh;
+    background: linear-gradient(transparent 20%, var(--white) 80%)
+    /* background: linear-gradient(transparent, var(--white)) */
 }
 
 #music-player {
     padding: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.song {
+    opacity: 0.5;
+}
+
+.selected-song {
+    opacity: 0.9;
+}
+
+.selected-song::before {
+    content: ">";
+    position: absolute;
+    font-size: 2rem;
+    left: 4vw;
+    animation: blink 1s linear infinite;
+}
+
+h1, h2, h3, h4, h5, h6, .selected-song::before {
     font-family: Aktura-Regular;
     color: var(--white);
     text-align: center;
@@ -62,7 +79,7 @@ a:hover {
 }
 
 a:active {
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 ol, ul {
@@ -86,6 +103,12 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-enclosure {
   background-color: transparent;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes dragon-fly {
@@ -128,5 +151,5 @@ audio::-webkit-media-controls-enclosure {
 
 body {
     margin: 20vh 0;
-    background: url("../images/picmix.com_1694670.gif") fixed no-repeat center / cover;
+    background: url("../images/sky.gif") fixed no-repeat center / cover;
 }
