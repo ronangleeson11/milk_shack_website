@@ -94,6 +94,7 @@ ol, ul {
     animation: dragon-fly 22s linear infinite;
     will-change: transform;
     pointer-events: none;
+    z-index: -1;
 }
 
 audio::-webkit-media-controls-panel {
