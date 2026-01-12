@@ -8,6 +8,10 @@
     --black: #121224;
 }
 
+* {
+    cursor: url("../images/glove.cur"), pointer;
+}
+
 #hero-title {
     font-size: 4rem;
 }
