@@ -18,6 +18,19 @@
     left: 4vh;
 }
 
+#music-footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10vh;
+    background: linear-gradient(transparent, var(--white))
+}
+
+#music-player {
+    padding: none;
+}
+
 h1 {
     font-family: Aktura-Regular;
     color: var(--white);
@@ -46,6 +59,7 @@ a:active {
 
 ol, ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #dragon {
@@ -56,6 +70,14 @@ ol, ul {
     animation: dragon-fly 22s linear infinite;
     will-change: transform;
     pointer-events: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent !important;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: transparent;
 }
 
 @keyframes dragon-fly {
