@@ -34,6 +34,12 @@
     padding: none;
 }
 
+#under-construction {
+    height: 40vh;
+    display: block;
+    margin: auto;
+}
+
 .song {
     opacity: 0.5;
 }
