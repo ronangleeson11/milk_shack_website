@@ -1,16 +1,14 @@
-const music_player = document.querySelector("#music-player");
+const hero_title = document.querySelector("#hero-title");
 const tracklist = document.querySelector("#tracklist");
+const music_player = document.querySelector("#music-player");
 
 // Play first song when album title clicked
-const hero_title = document.querySelector("#hero-title");
-if (hero_title) {
-    hero_title.addEventListener("click", () => {
-        const first_song = tracklist.querySelector(".song");
-        if (first_song) {
-            first_song.click();
-        }
-    });
-}
+hero_title.addEventListener("click", () => {
+    const first_song = tracklist.querySelector(".song");
+    if (first_song) {
+        first_song.click();
+    }
+});
 
 // Select song on click
 tracklist.addEventListener("click", (event) => {
@@ -32,10 +30,10 @@ tracklist.addEventListener("click", (event) => {
 // Auto-play next song when current ends
 music_player.addEventListener("ended", () => {
     const songs = Array.from(tracklist.querySelectorAll(".song"));
-    const currentSong = document.querySelector(".selected-song");
-    const currentIndex = songs.indexOf(currentSong);
-    if (currentIndex >= 0 && currentIndex < songs.length - 1) {
-        const nextSong = songs[currentIndex + 1];
-        nextSong.click();
+    const current_song = document.querySelector(".selected-song");
+    const current_index = songs.indexOf(current_song);
+    if (current_index >= 0 && current_index < songs.length - 1) {
+        const next_song = songs[current_index + 1];
+        next_song.click();
     }
 });
