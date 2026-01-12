@@ -1,6 +1,17 @@
 const music_player = document.querySelector("#music-player");
 const tracklist = document.querySelector("#tracklist");
 
+// Play first song when album title clicked
+const hero_title = document.querySelector("#hero-title");
+if (hero_title) {
+    hero_title.addEventListener("click", () => {
+        const first_song = tracklist.querySelector(".song");
+        if (first_song) {
+            first_song.click();
+        }
+    });
+}
+
 // Select song on click
 tracklist.addEventListener("click", (event) => {
     const li = event.target.closest('li');
