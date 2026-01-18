@@ -137,14 +137,14 @@ audio::-webkit-media-controls-enclosure {
     font-size: 2rem;
 }
 
-#subscribe button {
+#subscribe button, #shows button {
     font-family: inherit;
     font-size: 2rem;
     color: var(--white);
     background-color: black;
 }
 
-.shows {
+#shows {
     display: flex;
     flex-direction: column;
     width: 75vw;
@@ -153,7 +153,6 @@ audio::-webkit-media-controls-enclosure {
 
 .show {
     display: grid;
-    grid-area: 
 }
 
 @keyframes blink {
