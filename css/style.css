@@ -5,6 +5,7 @@
     --blue: #697EF5;
     --white: #FCFCF5;
     --black: #121224;
+    --transparent-white: #FCFCF533;
 }
 
 * {
@@ -142,6 +143,7 @@ audio::-webkit-media-controls-enclosure {
     font-size: 2rem;
     color: var(--white);
     background-color: black;
+    width: fit-content;
 }
 
 #shows {
@@ -152,7 +154,14 @@ audio::-webkit-media-controls-enclosure {
 }
 
 .show {
+    text-align: center;
+    padding: 1vw;
     display: grid;
+    background-color: var(--transparent-white);
+}
+
+.show-date-and-location {
+    margin: 1vh;
 }
 
 @keyframes blink {
