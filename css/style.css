@@ -144,6 +144,18 @@ audio::-webkit-media-controls-enclosure {
     background-color: black;
 }
 
+.shows {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+}
+
+.show {
+    display: grid;
+    grid-area: 
+}
+
 @keyframes blink {
     50% {
         opacity: 0;
