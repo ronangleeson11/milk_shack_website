@@ -16,6 +16,21 @@
     font-size: 4rem;
 }
 
+#social-media {
+    position: fixed;
+    bottom: 4vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-media-icon {
+    width: 40px;
+    opacity: .75;
+}
+
 #home-button {
     position: fixed;
     top: 0;
