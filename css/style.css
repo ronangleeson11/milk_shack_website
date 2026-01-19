@@ -140,13 +140,7 @@ audio::-webkit-media-controls-enclosure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1vh;
     font-size: 2rem;
-}
-
-#subscribe p {
-    flex: 100%;
 }
 
 #subscribe input {
@@ -158,7 +152,6 @@ audio::-webkit-media-controls-enclosure {
     font-size: 2rem;
     color: var(--white);
     background-color: black;
-    /* width: fit-content; */
 }
 
 #shows {
@@ -185,6 +178,7 @@ audio::-webkit-media-controls-enclosure {
 
 .show-venue {
     grid-area: venue;
+    font-family: serif;
 }
 
 .buy-tickets {
@@ -246,6 +240,6 @@ body {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    margin: 20vh 0;
+    margin: 18vh 0;
     background: url("../images/sky.gif") fixed no-repeat center / cover;
 }
